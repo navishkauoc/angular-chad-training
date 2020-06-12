@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SalesPerson } from './sales-person';
 
 @Component({
   selector: 'app-sales-person-list',
@@ -11,5 +12,13 @@ export class SalesPersonListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  //Create array of objects
+  salesPersonList: SalesPerson[] = [
+    new SalesPerson("Anup", "Kumar", "anup@gmail.com", 50000),
+    new SalesPerson("John", "Doe", "john@gmail.com", 40000),
+    new SalesPerson("Tom", "Baker", "tom@gmail.com", 45000),
+    new SalesPerson("Ahay", "Ghale", "ajay@gmail.com", 20000)
+  ]
 
 }
